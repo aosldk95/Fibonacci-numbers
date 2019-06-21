@@ -9,6 +9,18 @@ def fibonacci(a):
         return 0
     return fibonacci(a-1)+fibonacci(a-2)
 
+number = []
+i = 1
+while fibonacci(i) < 4000000 :
+    i += 1
+    if (fibonacci(i) % 2) == 0 :
+        number.append(fibonacci(i))
+print(sum(number))
+    
+    
+        
+        
+    
 
-n = int(input())
-print(fibonacci(n))    
+        
+   
